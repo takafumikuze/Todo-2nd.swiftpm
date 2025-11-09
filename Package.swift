@@ -1,4 +1,4 @@
-// swift-tools-version: 5.8
+// swift-tools-version: 5.5
 
 import PackageDescription
 
@@ -11,20 +11,9 @@ let package = Package(
         .iOSApplication(
             name: "Todo-2nd",
             targets: ["AppModule"],
+            bundleIdentifier: "com.example.Todo-2nd",
             displayVersion: "1.0",
-            bundleVersion: "1",
-            appIcon: .placeholder(icon: .checkmark),
-            accentColor: .presetColor(.blue),
-            supportedDeviceFamilies: [
-                .pad,
-                .phone
-            ],
-            supportedInterfaceOrientations: [
-                .portrait,
-                .landscapeRight,
-                .landscapeLeft,
-                .portraitUpsideDown(.when(deviceFamilies: [.pad]))
-            ]
+            bundleVersion: "1"
         )
     ],
     targets: [
